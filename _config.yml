@@ -24,10 +24,10 @@ addthis:
 
 fancybox: true
 
-google_analytics:
+google_analytics: G-1Q54XSFMZL
 rss:
 
-comment_provider: facebook
+comment_provider: disqus
 # Facebook comment
 facebook:
   appid: 123456789012345
