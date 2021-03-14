@@ -43,8 +43,8 @@ gitalk:
   repo: tatamobile_commnets
   oauth:
     accessToken:
-    clientId: 15e82eced18a4f3699f5
-    clientSecret: 9159132c67a2722bbee0d59ff3026bb361bcd81c
+    clientId: 123456789012345
+    clientSecret: 123456789012345
   admin:
     - vforkliu
   distractionFreeMode: false
