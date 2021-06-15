@@ -1,5 +1,6 @@
 menu:
-  Home: /
+  Home: https://tatamobile.net
+  Blog: /
   Archives: archives
 
 widgets:
@@ -24,7 +25,7 @@ addthis:
 
 fancybox: true
 
-google_analytics: G-1Q54XSFMZL
+google_analytics: G-FXZ3M3DJK6
 rss:
 
 comment_provider: gitalk
@@ -43,8 +44,8 @@ gitalk:
   repo: tatamobile_commnets
   oauth:
     accessToken:
-    clientId: 123456789012345
-    clientSecret: 123456789012345
+    clientId: 15e82eced18a4f3699f5
+    clientSecret: 9159132c67a2722bbee0d59ff3026bb361bcd81c
   admin:
     - vforkliu
   distractionFreeMode: false
