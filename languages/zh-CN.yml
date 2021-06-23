@@ -10,7 +10,10 @@ archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
 recent_posts: 最新文章
+next_post: 下一篇
+prev_post: 上一篇
 menu:
   Home: 首页
   Blog: 博客
   Archives: 归档
+  Learn: 学习笔记

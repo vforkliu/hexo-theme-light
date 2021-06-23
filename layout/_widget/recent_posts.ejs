@@ -1,8 +1,8 @@
 <% if (site.posts.length){ %>
 <div class="widget tag">
-  <h3 class="title"><%= __('recent_posts') %></h3>
+  <h2 class="title"><%= __('recent_posts') %></h2>
   <ul class="entry">
-    <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+    <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
       <li>
         <a href="<%- url_for(post.path) %>"><%= post.title %></a>
       </li>

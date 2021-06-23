@@ -1,1 +1,15 @@
 <%- partial('_partial/article', {item: page, index: false}) %>
+<% if (is_post()) { %>
+  <nav id="postnav">
+    
+    <% if (page.prev){ %>
+      <p><%= __('prev_post') %> : <a href="<%- url_for(page.prev.path) %>" ><%= page.prev.title %></a></p>
+    <% } %>
+   
+    <% if (page.next){ %>
+      <p><%= __('next_post') %> : <a href="<%- url_for(page.next.path) %>" ><%= page.next.title %></a></p>
+    <% } %>
+    
+    <div class="clearfix"></div>
+  </nav>
+<% } %>
