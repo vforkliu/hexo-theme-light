@@ -18,11 +18,18 @@
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
       <% } else { %>
+        <!-- Table of Contents -->
+        <% if(item.toc == true){ %>
+          <div id="toc" class="toc-article">
+              <strong class="toc-title">目录</strong>
+              <%- toc(item.content,{list_number:true}) %>
+          </div>
+        <% } %>
         <%- item.content %>
       <% } %>
       <% if (item.recent_posts){ %>
         <%- partial('../_widget/recent_posts') %>
-        <% } %>
+      <% } %>
     </div>
     <footer>
       <% if (index){ %>
