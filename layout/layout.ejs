@@ -6,7 +6,20 @@
   <header id="header" class="inner"><%- partial('_partial/header') %></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><%- body %></div></div>
-    <aside id="sidebar" class="alignright"><%- partial('_partial/sidebar', {}, {cache: true}) %></aside>
+    <aside id="sidebar" class="alignright">
+        <%- partial('_partial/sidebar', {}, {cache: true}) %>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<%= theme.google_adsense %>" crossorigin="anonymous"></script>
+        <!-- 侧边栏广告 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="<%= theme.google_adsense %>"
+            data-ad-slot="2644505017"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </aside>
     <div class="clearfix"></div>
   </div>
   <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
