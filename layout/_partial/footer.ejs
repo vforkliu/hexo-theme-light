@@ -1,6 +1,6 @@
 <div class="alignleft">
   <% if (config.author){ %>
-  &copy; <%= new Date().getFullYear() %> <%= config.author %>|<%= config.beian_icp %>|<%= config.beian %>
+  &copy; <%= new Date().getFullYear() %> <%= config.author %>|<a href="http://beian.miit.gov.cn/"; target=_blank><%= config.beian_icp %></a>|<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030902002346"><%= config.beian %></a>
   <% } else { %>
   &copy; <%= new Date().getFullYear() %> <%= config.title %>
   <% } %>
