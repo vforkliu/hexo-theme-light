@@ -15,6 +15,9 @@
       <% } %>
     </header>
     <div class="e-content entry" itemprop="articleBody">
+        <% if (item.recent_posts){ %>
+            <%- partial('../_widget/recent_posts', {rpConfig: config.recent_posts}) %>
+          <% } %>
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
       <% } else { %>
@@ -26,9 +29,6 @@
           </div>
         <% } %>
         <%- item.content %>
-      <% } %>
-      <% if (item.recent_posts){ %>
-        <%- partial('../_widget/recent_posts') %>
       <% } %>
     </div>
     <footer>

@@ -2,7 +2,7 @@
 <div class="widget tag">
   <h2 class="title"><%= __('recent_posts') %></h2>
   <ul class="entry">
-    <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
+    <% site.posts.sort('date', -1).limit(rpConfig.number).each(function(post){ %>
       <li>
         <a href="<%- url_for(post.path) %>"><%= post.title %></a>
       </li>
